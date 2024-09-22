@@ -1,0 +1,296 @@
+map<int, vector<string>> products = {
+    {1, {"tech", "gadget", "innovation", "AI", "ML", "robotics"}},
+    {2, {"fashion", "clothing", "accessory", "style", "beauty", "trendy"}},
+    {3, {"sports", "fitness", "health", "workout", "yoga", "exercise"}},
+    {4, {"tech", "electronics", "gadget", "AI", "computers", "gaming"}},
+    {5, {"fashion", "clothing", "luxury", "shoes", "accessory", "beauty"}},
+    {6, {"sports", "outdoor", "adventure", "hiking", "cycling", "gear"}},
+    {7, {"books", "education", "learning", "reading", "literature", "fiction"}},
+    {8, {"tech", "gadget", "robotics", "automation", "IoT", "blockchain"}},
+    {9, {"fashion", "style", "jewelry", "luxury", "design", "beauty"}},
+    {10, {"sports", "fitness", "gear", "running", "cycling", "workout"}}
+};
+
+map<int, int> customerInteractions = {
+    {101, 1},
+    {102, 2},
+    {103, 3},
+    {104, 4},
+    {105, 5},
+    {106, 6},
+    {107, 7},
+    {108, 8},
+    {109, 9},
+    {110, 10}
+};
+
+#include <map>
+#include <vector>
+#include <string>
+#include <utility>
+
+map<int, vector<string>> products = {
+    {1, {"tech", "gadget", "innovation", "AI", "ML", "robotics", "automation", "IoT", "blockchain", "VR"}},
+    {2, {"fashion", "clothing", "accessory", "style", "beauty", "luxury", "trendy", "seasonal", "jewelry", "shoes"}},
+    {3, {"sports", "fitness", "health", "workout", "yoga", "exercise", "equipment", "running", "outdoor", "cycling"}},
+    {4, {"tech", "electronics", "gadget", "innovation", "AI", "computers", "laptops", "gaming", "VR", "IoT"}},
+    {5, {"fashion", "clothing", "style", "trendy", "shoes", "luxury", "design", "accessory", "jewelry", "seasonal"}},
+    {6, {"sports", "fitness", "outdoor", "running", "cycling", "hiking", "adventure", "equipment", "camping", "gear"}},
+    {7, {"books", "education", "learning", "reading", "knowledge", "literature", "novels", "fiction", "non-fiction", "history"}},
+    {8, {"tech", "innovation", "gadget", "robotics", "AI", "VR", "gaming", "automation", "IoT", "ML"}},
+    {9, {"fashion", "beauty", "clothing", "accessory", "style", "luxury", "jewelry", "shoes", "trendy", "design"}},
+    {10, {"sports", "workout", "fitness", "health", "yoga", "equipment", "outdoor", "running", "exercise", "gym"}},
+    {11, {"tech", "gadget", "electronics", "innovation", "AI", "automation", "IoT", "robotics", "computers", "VR"}},
+    {12, {"fashion", "clothing", "luxury", "shoes", "accessory", "trendy", "style", "seasonal", "jewelry", "design"}},
+    {13, {"sports", "outdoor", "cycling", "fitness", "gear", "running", "adventure", "hiking", "exercise", "equipment"}},
+    {14, {"books", "fiction", "novels", "reading", "education", "learning", "knowledge", "literature", "non-fiction", "history"}},
+    {15, {"tech", "gaming", "VR", "innovation", "robotics", "AI", "electronics", "gadget", "automation", "IoT"}},
+    {16, {"fashion", "beauty", "luxury", "shoes", "clothing", "style", "jewelry", "trendy", "design", "accessory"}},
+    {17, {"sports", "fitness", "workout", "health", "outdoor", "equipment", "cycling", "running", "hiking", "adventure"}},
+    {18, {"tech", "AI", "robotics", "gadget", "innovation", "IoT", "automation", "ML", "VR", "computers"}},
+    {19, {"fashion", "clothing", "jewelry", "luxury", "accessory", "style", "shoes", "beauty", "design", "trendy"}},
+    {20, {"sports", "running", "fitness", "health", "outdoor", "gear", "exercise", "yoga", "equipment", "cycling"}},
+    {21, {"books", "education", "literature", "history", "fiction", "novels", "reading", "knowledge", "learning", "non-fiction"}},
+    {22, {"tech", "gadget", "AI", "electronics", "innovation", "robotics", "computers", "automation", "VR", "IoT"}},
+    {23, {"fashion", "luxury", "clothing", "style", "shoes", "accessory", "beauty", "jewelry", "trendy", "design"}},
+    {24, {"sports", "fitness", "equipment", "outdoor", "cycling", "gear", "adventure", "running", "hiking", "workout"}},
+    {25, {"tech", "AI", "robotics", "innovation", "gadget", "automation", "ML", "electronics", "IoT", "VR"}},
+    {26, {"fashion", "clothing", "luxury", "style", "jewelry", "shoes", "beauty", "trendy", "accessory", "design"}},
+    {27, {"sports", "outdoor", "cycling", "running", "fitness", "gear", "adventure", "exercise", "hiking", "equipment"}},
+    {28, {"books", "education", "fiction", "reading", "knowledge", "novels", "literature", "history", "learning", "non-fiction"}},
+    {29, {"tech", "gaming", "VR", "electronics", "innovation", "robotics", "gadget", "AI", "automation", "IoT"}},
+    {30, {"fashion", "clothing", "accessory", "luxury", "shoes", "jewelry", "style", "beauty", "trendy", "design"}},
+    {31, {"sports", "health", "fitness", "outdoor", "running", "workout", "yoga", "cycling", "gear", "equipment"}},
+    {32, {"books", "education", "fiction", "reading", "novels", "learning", "literature", "history", "knowledge", "non-fiction"}},
+    {33, {"tech", "gadget", "AI", "robotics", "electronics", "innovation", "automation", "IoT", "VR", "computers"}},
+    {34, {"fashion", "luxury", "style", "clothing", "shoes", "accessory", "beauty", "trendy", "jewelry", "design"}},
+    {35, {"sports", "outdoor", "adventure", "fitness", "running", "gear", "hiking", "cycling", "workout", "equipment"}},
+    {36, {"tech", "AI", "gadget", "electronics", "innovation", "robotics", "automation", "VR", "IoT", "computers"}},
+    {37, {"fashion", "beauty", "clothing", "luxury", "style", "shoes", "jewelry", "trendy", "accessory", "design"}},
+    {38, {"sports", "health", "yoga", "fitness", "workout", "cycling", "gear", "outdoor", "running", "equipment"}},
+    {39, {"books", "education", "novels", "fiction", "learning", "literature", "history", "knowledge", "reading", "non-fiction"}},
+    {40, {"tech", "gadget", "innovation", "electronics", "AI", "robotics", "automation", "VR", "IoT", "ML"}},
+    {41, {"fashion", "luxury", "clothing", "beauty", "style", "shoes", "jewelry", "trendy", "accessory", "design"}},
+    {42, {"sports", "fitness", "workout", "yoga", "cycling", "running", "gear", "equipment", "outdoor", "health"}},
+    {43, {"tech", "electronics", "robotics", "AI", "gadget", "innovation", "automation", "IoT", "computers", "VR"}},
+    {44, {"fashion", "clothing", "luxury", "style", "beauty", "shoes", "trendy", "jewelry", "design", "accessory"}},
+    {45, {"sports", "fitness", "outdoor", "gear", "cycling", "workout", "hiking", "adventure", "running", "equipment"}},
+    {46, {"books", "education", "reading", "fiction", "novels", "learning", "literature", "knowledge", "history", "non-fiction"}},
+    {47, {"tech", "AI", "gadget", "innovation", "robotics", "electronics", "automation", "IoT", "computers", "VR"}},
+    {48, {"fashion", "clothing", "luxury", "shoes", "style", "beauty", "jewelry", "trendy", "accessory", "design"}},
+    {49, {"sports", "fitness", "yoga", "health", "workout", "cycling", "gear", "outdoor", "running", "equipment"}},
+    {50, {"books", "fiction", "education", "novels", "learning", "literature", "knowledge", "reading", "non-fiction", "history"}}
+};
+
+vector<pair<int, int>> interactions = {
+    {101, 1}, {102, 2}, {103, 3}, {104, 4}, {105, 5},
+    {106, 6}, {107, 1}
+
+1,luxury,AI,fashion
+2,gear,robotics,style
+3,outdoor,gear,adventure
+4,books,automation,beauty
+5,clothing,style,AI
+6,tech,books,fitness
+7,fashion,accessory,automation
+8,workout,automation,AI
+9,luxury,robotics,innovation
+10,adventure,tech,gear
+11,electronics,robotics,adventure
+12,gadget,robotics,accessory
+13,style,sports,gadget
+14,accessory,automation,AI
+15,fashion,gadget,style
+16,fashion,adventure,gear
+17,AI,electronics,workout
+18,luxury,sports,outdoor
+19,gadget,luxury,clothing
+20,books,automation,robotics
+21,fitness,adventure,sports
+22,adventure,fashion,AI
+23,AI,fitness,luxury
+24,fashion,robotics,automation
+25,tech,accessory,gear
+26,fitness,accessory,beauty
+27,workout,style,fashion
+28,beauty,accessory,fitness
+29,accessory,outdoor,fashion
+30,gear,innovation,automation
+31,fashion,outdoor,beauty
+32,fitness,innovation,gear
+33,automation,innovation,clothing
+34,luxury,style,AI
+35,outdoor,gear,gadget
+36,workout,robotics,innovation
+37,outdoor,electronics,automation
+38,outdoor,automation,innovation
+39,fitness,automation,workout
+40,adventure,outdoor,beauty
+41,clothing,beauty,fashion
+42,books,tech,accessory
+43,style,gadget,sports
+44,accessory,workout,robotics
+45,gadget,AI,accessory
+46,style,fitness,gadget
+47,books,AI,outdoor
+48,automation,electronics,tech
+49,beauty,automation,electronics
+50,gear,robotics,innovation
+51,innovation,books,tech
+52,books,tech,outdoor
+53,fashion,fitness,outdoor
+54,robotics,sports,clothing
+55,sports,innovation,accessory
+56,robotics,sports,automation
+57,beauty,workout,robotics
+58,adventure,tech,luxury
+59,electronics,gear,sports
+60,adventure,gear,fitness
+61,luxury,gadget,gear
+62,beauty,fitness,robotics
+63,clothing,adventure,tech
+64,workout,outdoor,sports
+65,beauty,clothing,tech
+66,accessory,gear,sports
+67,AI,clothing,sports
+68,AI,automation,innovation
+69,beauty,outdoor,sports
+70,electronics,adventure,outdoor
+71,fashion,AI,electronics
+72,clothing,AI,innovation
+73,clothing,outdoor,adventure
+74,robotics,books,clothing
+75,gadget,tech,electronics
+76,style,luxury,accessory
+77,clothing,fitness,AI
+78,sports,adventure,accessory
+79,robotics,gadget,fashion
+80,automation,workout,gear
+81,adventure,robotics,accessory
+82,sports,AI,fitness
+83,beauty,style,sports
+84,AI,tech,outdoor
+85,fitness,accessory,fashion
+86,innovation,accessory,books
+87,gear,innovation,adventure
+88,electronics,gear,beauty
+89,clothing,automation,tech
+90,fitness,gear,sports
+91,fashion,sports,innovation
+92,gear,gadget,sports
+93,outdoor,accessory,tech
+94,sports,accessory,electronics
+95,fitness,fashion,tech
+96,innovation,electronics,robotics
+97,gear,beauty,sports
+98,style,books,tech
+99,accessory,clothing,luxury
+100,adventure,gadget,beauty
+101,tech,innovation,electronics
+102,electronics,innovation,tech
+103,innovation,electronics,tech
+104,electronics,tech,innovation
+105,tech,electronics,innovation
+106,electronics,tech,innovation
+107,tech,electronics,innovation
+108,electronics,tech,innovation
+109,tech,electronics,innovation
+110,electronics,tech,innovation
+
+
+{101, 1},
+{102, 2},
+{103, 3},
+{104, 4},
+{105, 5},
+{106, 6},
+{107, 7},
+{108, 8},
+{109, 9},
+{110, 10},
+{111, 3},
+{112, 5},
+{113, 7},
+{114, 9},
+{115, 1},
+{116, 2},
+{117, 4},
+{118, 6},
+{119, 8},
+{120, 10},
+{121, 1},
+{122, 3},
+{123, 5},
+{124, 7},
+{125, 9},
+{126, 2},
+{127, 4},
+{128, 6},
+{129, 8},
+{130, 10},
+{131, 1},
+{132, 3},
+{133, 5},
+{134, 7},
+{135, 9},
+{136, 2},
+{137, 4},
+{138, 6},
+{139, 8},
+{140, 10},
+{141, 1},
+{142, 3},
+{143, 5},
+{144, 7},
+{145, 9},
+{146, 2},
+{147, 4},
+{148, 6},
+{149, 8},
+{150, 10},
+{151, 1},
+{152, 3},
+{153, 5},
+{154, 7},
+{155, 9},
+{156, 2},
+{157, 4},
+{158, 6},
+{159, 8},
+{160, 10},
+{161, 1},
+{162, 3},
+{163, 5},
+{164, 7},
+{165, 9},
+{166, 2},
+{167, 4},
+{168, 6},
+{169, 8},
+{170, 10},
+{171, 1},
+{172, 3},
+{173, 5},
+{174, 7},
+{175, 9},
+{176, 2},
+{177, 4},
+{178, 6},
+{179, 8},
+{180, 10},
+{181, 1},
+{182, 3},
+{183, 5},
+{184, 7},
+{185, 9},
+{186, 2},
+{187, 4},
+{188, 6},
+{189, 8},
+{190, 10},
+{191, 1},
+{192, 3},
+{193, 5},
+{194, 7},
+{195, 9},
+
