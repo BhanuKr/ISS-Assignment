@@ -5,6 +5,8 @@
 #include <chrono>
 #include <sstream>
 #include "user_code.h"
+#include <sys/resource.h>  // For getrusage
+#include <unistd.h>   
 using namespace std;
 using namespace std::chrono;
 
@@ -192,12 +194,13 @@ int main(int argc, char **argv)
     string outputPath2 = argv[6]; // File path for output file
     string outputPath3 = argv[7]; //  Folder path for output files
     string newHashtagPath = argv[8];
-
+    long memBefore = getMemoryUsage();
     int k = 2; // Q1
     question1(hashtagsPath, purchasesPath, pricesPath, k, outputPath);
 
     question2(purchasesPath, pricesPath, groupsPath, outputPath2);
 
     question3(hashtagsPath, purchasesPath, pricesPath, newHashtagPath, k, outputPath3);
+    long memAfter = getMemoryUsage();
     return 0;
 }
