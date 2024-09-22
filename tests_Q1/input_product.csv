@@ -1,7 +1,11 @@
 product_id,hashtags
-1,tech,gadget
-2,fashion,clothing
-3,sports,fitness
-4,tech,innovation
-5,fashion,accessory
-6,tech,gadget
+1,tech,gadget,innovation,AI,ML,robotics
+2,fashion,clothing,accessory,style,beauty,trendy
+3,sports,fitness,health,workout,yoga,exercise
+4,tech,electronics,gadget,AI,computers,gaming
+5,fashion,clothing,luxury,shoes,accessory,beauty
+6,sports,outdoor,adventure,hiking,cycling,gear
+7,books,education,learning,reading,literature,fiction
+8,tech,gadget,robotics,automation,IoT,blockchain
+9,fashion,style,jewelry,luxury,design,beauty
+10,sports,fitness,gear,running,cycling,workout
