@@ -25,6 +25,11 @@ using namespace std;
  * @param purchases 
  * @param prices 
  */
+long getMemoryUsage() {
+    struct rusage usage;
+    getrusage(RUSAGE_SELF, &usage);  // Get resource usage
+    return usage.ru_maxrss;          // Return maximum resident set size (in kilobytes)
+}
 
 //O(1) time complexity and O(1) space complexity
 //Function to split a string by a delimiter
